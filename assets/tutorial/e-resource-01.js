@@ -49,7 +49,7 @@ module.exports = () => {
               </xml>`
     },
 
-    label: 'Resource - Pick It Up',
+    label: 'Tài nguyên - Nhặt đá quý',
 
     goals: [
       {

@@ -50,7 +50,7 @@ module.exports = () => {
               </xml>`
     },
 
-    label: 'Resource - Drop The Gem',
+    label: 'Tài nguyên - Thả đá quý',
 
     goals: [
       {

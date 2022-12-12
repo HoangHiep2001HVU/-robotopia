@@ -46,7 +46,7 @@ module.exports = () => {
               </xml>`
     },
 
-    label: 'Loops - Nesting',
+    label: 'Vòng lặp - Xếp lồng vào nhau',
 
     goals: [
       {

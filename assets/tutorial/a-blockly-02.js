@@ -59,7 +59,7 @@ module.exports = () => {
               </xml>`
     },
 
-    label: 'Blockly - Rearrange',
+    label: 'Blockly - Sắp xếp lại',
 
     goals: [
       {

@@ -160,9 +160,10 @@ function getAllTutorials (tutorials) {
 
   function getTutorialCategory(category) {
     const categoryName = category.categoryName
+    const categoryNameV = category.categoryNameV
     return html`
       <div class="category">
-        <div class="name">${categoryName}</div>
+        <div class="name">${categoryNameV}</div>
         ${_.map(category.levels, getTutorial)}
       </div>
 `

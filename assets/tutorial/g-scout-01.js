@@ -102,7 +102,7 @@ module.exports = () => {
               </xml>`
     },
 
-    label: 'Scout - Or... Walking Around Without Purpose',
+    label: 'Trinh sát - Hoặc... Đi loanh quanh không mục đích',
 
     goals: [
       {

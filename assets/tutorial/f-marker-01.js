@@ -110,7 +110,7 @@ module.exports = () => {
               </xml>`
     },
 
-    label: 'Marker - Help Them',
+    label: 'Đánh dấu - Giúp họ',
 
     goals: [
       {

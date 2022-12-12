@@ -47,7 +47,7 @@ module.exports = () => {
               </xml>`
     },
 
-    label: 'Loops - The Good Parts',
+    label: 'Vòng lặp - Cấu trúc tốt',
 
     goals: [
       {

@@ -51,7 +51,7 @@ module.exports = () => {
               </xml>`
     },
 
-    label: 'Loops - Hard Mode',
+    label: 'Vòng lặp - Chế độ khó',
 
     goals: [
       {

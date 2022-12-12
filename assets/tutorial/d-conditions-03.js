@@ -48,7 +48,7 @@ module.exports = () => {
               </xml>`
     },
 
-    label: 'Conditions - Hard Mode',
+    label: 'Điều kiện - Chế độ khó',
 
     goals: [
       {

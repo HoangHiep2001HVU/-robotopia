@@ -50,7 +50,7 @@ module.exports = () => {
       `
     },
 
-    label: 'Conditions - Right Round',
+    label: 'Điều kiện - Vòng bên phải',
 
     goals: [
       {

@@ -132,7 +132,7 @@ module.exports = () => {
               </xml>`
     },
 
-    label: 'Marker - Massive Collecting',
+    label: 'Đánh dấu - Thu thập lớn',
 
     goals: [
       {

@@ -46,7 +46,7 @@ module.exports = () => {
               </xml>`
     },
 
-    label: 'Loops - Getting Lazy',
+    label: 'Vòng lặp - Lười biếng',
 
     goals: [
       {
