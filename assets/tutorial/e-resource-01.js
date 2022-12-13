@@ -55,20 +55,20 @@ module.exports = () => {
       {
         type: 'carryResource',
         params: { hasResource: true },
-        desc: 'Collect a resource',
+        desc: 'Thu thập tài nguyên',
         isMandatory: true
       }
     ],
 
     storyModal: {
-      text: `So far it's all been fun and games. This is, what we're really after. Gems. Shiny. Valuable`,
-      hint: 'Robots detect resources within 3 fields.'
+      text: `Cho đến nay tất cả đều là niềm vui và trò chơi. Đây là, những gì chúng tôi đang thực sự sau khi. đá quý. Sáng bóng. Quý giá`,
+      hint: 'Robot phát hiện tài nguyên trong 3 lĩnh vực.'
     },
 
     winModal: {
-      text: `Now what? This block let's the robot deposit the resource when being near the base.`,
+      text: `Giờ thì sao? Khối này cho phép robot gửi tài nguyên khi ở gần căn cứ.`,
       unlockedBlock: {
-        name: 'Deposit-Resource',
+        name: 'Tiền gửi-Tài nguyên',
         img: '../../assets/img/tutorials/blocks/deposit-resource.png'
       }
     }

@@ -54,18 +54,18 @@ module.exports = () => {
       {
         type: 'touchTile',
         params: { tileID: 4 },
-        desc: 'Move the robot to any of the metal tiles',
+        desc: 'Di chuyển robot đến bất kỳ ô kim loại nào',
         isMandatory: true
       }
     ],
 
     storyModal: {
-      text: `Here comes the mastery challenge! If you can solve this puzzle, you are well prepared for the upcoming challenges.`,
-      hint: 'If you want to skip this level, you can simply click on the logo on the upper left corner to get back to the overview'
+      text: `Đây là thử thách thành thạo! Nếu giải được câu đố này, bạn đã chuẩn bị tốt cho những thử thách sắp tới.`,
+      hint: 'Nếu bạn muốn bỏ qua cấp độ này, bạn chỉ cần nhấp vào logo ở góc trên bên trái để quay lại phần tổng quan'
     },
 
     winModal: {
-      text: `Incredible! You really are on a run.`
+      text: `Đáng kinh ngạc! Bạn thực sự đang trên đường chạy trốn.`
     }
   }
 }

@@ -64,18 +64,18 @@ module.exports = () => {
       {
         type: 'useBlockWithinBlock',
         params: { outerBlock: 'controls_repeat', innerBlock: 'controls_repeat' },
-        desc: 'Nest a repeat block inside another repeat block',
+        desc: 'Lồng một khối lặp lại bên trong một khối lặp lại khác',
         isMandatory: false
       }
     ],
 
     storyModal: {
-      text: `Well done! Now here is a difficult one..`,
-      hint: 'You can use a repeat inside a repeat.'
+      text: `Làm tốt! Bây giờ đây là một khó khăn.`,
+      hint: 'Bạn có thể sử dụng vòng lặp bên trong vòng lặp.'
     },
 
     winModal: {
-      text: `What comes next? - Loops Hard Mode!`,
+      text: `Tiếp theo là gì? - Chế độ vòng lặp khó hơn!`,
       unlockedBlock: { name: 'If-Condition Block', img: '../../assets/img/tutorials/blocks/if-condition.png' }
     }
   }

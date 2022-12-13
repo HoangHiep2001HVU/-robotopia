@@ -52,12 +52,12 @@ module.exports = () => {
     ],
 
     storyModal: {
-      text: `Alright, I see you figured how to turn left. But you can also turn right. Crazy, i know.`,
+      text: `Được rồi, tôi thấy bạn đã tìm ra cách rẽ trái. Nhưng bạn cũng có thể rẽ phải. Điên, tôi biết.`,
       hint: ''
     },
 
     winModal: {
-      text: `Anything inside this block will be repeated as many times as defined by the number`,
+      text: `Mọi thứ bên trong khối này sẽ được lặp lại nhiều lần như được xác định bởi số`,
       unlockedBlock: { name: 'Repeat', img: '../../assets/img/tutorials/blocks/repeat-10-block.png' }
     }
 

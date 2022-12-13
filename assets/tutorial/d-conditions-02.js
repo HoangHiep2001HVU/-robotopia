@@ -48,18 +48,18 @@ module.exports = () => {
       {
         type: 'touchTile',
         params: { tileID: 4 },
-        desc: 'Move to the metal tile',
+        desc: 'Di chuyển đến gạch kim loại',
         isMandatory: true
       }
     ],
 
     storyModal: {
-      text: `Now you known the power of a condition-block... This time, you have to solve the level with a single move-block`,
-      hint: 'Try to see the pattern, the blocks give an indication where to go.'
+      text: `Bây giờ bạn đã biết sức mạnh của khối điều kiện... Lần này, bạn phải giải quyết cấp độ bằng một khối di chuyển duy nhất`,
+      hint: 'Cố gắng xem mô hình, các khối đưa ra chỉ dẫn về nơi cần đi.'
     },
 
     winModal: {
-      text: `Let's get some resources`,
+      text: `Hãy lấy một số tài nguyên`,
       unlockedBlock: { name: 'Collect Block', img: '../../assets/img/tutorials/blocks/collect-resource.png' }
     }
   }

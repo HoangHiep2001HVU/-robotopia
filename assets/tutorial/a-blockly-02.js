@@ -71,12 +71,12 @@ module.exports = () => {
     ],
 
     storyModal: {
-      text: `Now that you know how to drag new blocks into the canvas, you need to master rearranging them. Stack the blocks in the right order to win this level.`,
-      hint: 'You can only use the given blocks to solve this level'
+      text: `Bây giờ bạn đã biết cách kéo các khối mới vào canvas, bạn cần thành thạo việc sắp xếp lại chúng. Xếp các khối theo đúng thứ tự để giành chiến thắng ở cấp độ này.`,
+      hint: 'Bạn chỉ có thể sử dụng các khối nhất định để giải quyết cấp độ này'
     },
 
     winModal: {
-      text: `You mastered the basics of the interface, now your journey goes on with some harder puzzles.`
+      text: `Bạn đã nắm vững những điều cơ bản của giao diện, bây giờ cuộc hành trình của bạn tiếp tục với một số câu đố khó hơn.`
     }
   }
 }

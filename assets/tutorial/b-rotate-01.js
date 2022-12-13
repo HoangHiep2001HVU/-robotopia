@@ -45,11 +45,11 @@ module.exports = () => {
 
     storyModal: {
       text: ``,
-      hint: 'Next you will learn how to change the direction of the robot.'
+      hint: 'Bạn đã nắm vững những điều cơ bản của giao diện, bây giờ cuộc hành trình của bạn tiếp tục với một số câu đố khó hơn.'
     },
 
     winModal: {
-      text: `Good job there, making the robots spin!`
+      text: `Làm tốt lắm, làm cho rô-bốt quay!`
     }
 
   }

@@ -77,12 +77,12 @@ const winningCondition = (gameState, { level, isStoryModalOpen }, workspace, sen
 
       return modalView(html`
         <div class="${prefix} animated content">
-          <h1>Congratulations, you finished the level!</h1>
+          <h1>Xin chúc mừng, bạn đã hoàn thành cấp độ!</h1>
           ${unlockedHtml}
           <p>${winModal.text}</p>
           <div class="goals">
             <div>
-              <h5>Goals: </h5>
+              <h5>Yêu cầu: </h5>
               ${goalListView({ goals: mandatoryGoals, game, workspace })}
             </div>
             <div style="${optionalGoals.length === 0 ? 'display: none' : ''}">
@@ -101,7 +101,7 @@ const winningCondition = (gameState, { level, isStoryModalOpen }, workspace, sen
 
     if (isStoryModalOpen) {
       const startButton = buttonView({
-        label: 'Bắt đầu hướng dẫn',
+        label: 'Bắt đầu',
         onClick: () => send('tutorial:setDisplayStoryModal', { displayStory: false })
       })
 
@@ -115,7 +115,7 @@ const winningCondition = (gameState, { level, isStoryModalOpen }, workspace, sen
           
           <div class="goals">
             <div>
-              <h5>Goals: </h5>
+              <h5>Yêu cầu: </h5>
               ${goalListView({ goals: mandatoryGoals, game, workspace })}
             </div>
             <div style="${optionalGoals.length === 0 ? 'display: none' : ''}">

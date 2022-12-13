@@ -56,20 +56,20 @@ module.exports = () => {
       {
         type: 'collectResources',
         params: { amount: 10 },
-        desc: 'Bring back the resource',
+        desc: 'Mang lại tài nguyên',
         isMandatory: true
       }
     ],
 
     storyModal: {
-      text: `Alright, you got the good stuff. Now get it home!`,
-      hint: 'A good robot always knows where his base is'
+      text: `Được rồi, bạn có những thứ tốt. Bây giờ mang nó về nhà!`,
+      hint: 'Một người máy giỏi luôn biết căn cứ của mình ở đâu'
     },
 
     winModal: {
-      text: 'Thank you for getting my robots back to safety.',
+      text: 'Cảm ơn bạn đã đưa robot của tôi trở lại an toàn.',
       unlockedBlock: {
-        name: 'Place Marker',
+        name: 'Điểm đánh dấu',
         img: '../../assets/img/tutorials/blocks/place-marker.png'
       }
     }

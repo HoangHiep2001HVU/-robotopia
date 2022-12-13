@@ -59,12 +59,12 @@ module.exports = () => {
     ],
 
     storyModal: {
-      text: 'You are doing a great job. This level is going to be a little bit harder.',
+      text: 'Bạn đang làm một công việc tuyệt vời. Cấp độ này sẽ khó hơn một chút.',
       hint: ''
     },
 
     winModal: {
-      text: 'Great job!'
+      text: 'Bạn đã làm rất tốt!'
     }
   }
 }

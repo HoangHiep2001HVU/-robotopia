@@ -63,18 +63,18 @@ module.exports = () => {
       {
         type: 'maxBlocks',
         params: {amount: 17},
-        desc: 'Use a maximum of 17 blocks',
+        desc: 'Sử dụng tối đa 17 khối',
         isMandatory: false
       }
     ],
 
     storyModal: {
-      text: `You're doing really great!`,
-      hint: 'Try to look for the pattern. If you find it, things are way easier... (If it is too hard, you can always click on the logo in the upper left corner to get back to the overview.)'
+      text: `Bạn đang làm rất tốt!`,
+      hint: 'Cố gắng tìm kiếm các mô hình. Nếu bạn tìm thấy nó, mọi thứ sẽ dễ dàng hơn nhiều... (Nếu quá khó, bạn luôn có thể nhấp vào biểu tượng ở góc trên bên trái để quay lại tổng quan.)'
     },
 
     winModal: {
-      text: `You are the Loop-King!`
+      text: `Bạn là Loop-King!`
     }
   }
 }

@@ -56,24 +56,24 @@ module.exports = () => {
       {
         type: 'touchTile',
         params: { tileID: 4 },
-        desc: 'Move to the metal tile',
+        desc: 'Di chuyển đến gạch kim loại',
         isMandatory: true
       },
       {
         type: 'maxBlocks',
         params: { amount: 5 },
-        desc: 'Use a maximum of 5 blocks',
+        desc: 'Sử dụng tối đa 5 khối',
         isMandatory: false
       }
     ],
 
     storyModal: {
-      text: `This puzzle looks quite hard, good thing you just got the condition-block. With this block, this level should be no problem at all`,
-      hint: 'It might look hard, but you can simply check if the next tile is water'
+      text: `Câu đố này có vẻ khá khó, điều tốt là bạn vừa có khối điều kiện. Với khối này, mức này sẽ không có vấn đề gì cả`,
+      hint: 'Trông có vẻ khó, nhưng bạn có thể chỉ cần kiểm tra xem ô tiếp theo có phải là nước hay không'
     },
 
     winModal: {
-      text: `Your're a beast!`
+      text: `Bạn là một con thú!`
     }
   }
 }

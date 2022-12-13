@@ -138,18 +138,18 @@ module.exports = () => {
       {
         type: 'collectResources',
         params: {amount: RESOURCES_TO_WIN},
-        desc: 'Collect ' + RESOURCES_TO_WIN + ' resources',
+        desc: 'Sưu tầm ' + RESOURCES_TO_WIN + ' tài nguyên',
         isMandatory: true
       }
     ],
 
     storyModal: {
-      text: `Now that we've got 3 more robots, let's get down to business. Utilize them to gather some resources.`,
-      hint: 'Place a marker next to a resource.'
+      text: `Bây giờ chúng ta đã có thêm 3 rô-bốt, hãy bắt tay vào công việc. Sử dụng chúng để thu thập một số tài nguyên.`,
+      hint: 'Đặt một điểm đánh dấu bên cạnh một tài nguyên.'
     },
 
     winModal: {
-      text: `Now that's what I'm talking about. ${RESOURCES_TO_WIN} blue gems. So shiny!`
+      text: `Bây giờ đó là những gì tôi đang nói về. ${RESOURCES_TO_WIN} đá quý màu xanh. Sáng bóng!`
     }
   }
 }

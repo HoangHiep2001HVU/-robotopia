@@ -108,24 +108,24 @@ module.exports = () => {
       {
         type: 'discoverEntityOfType',
         params: {type: 'resource'},
-        desc: 'Make the Robot scout the map to find something interesting',
+        desc: 'Làm cho Robot trinh sát bản đồ để tìm thứ gì đó thú vị',
         isMandatory: true
       },
       {
         type: 'gameTimeLimit',
         params: {timeInS: timeLimit},
-        desc: 'Find something within ' + timeLimit + ' seconds',
+        desc: 'Tìm một cái gì đó bên trong ' + timeLimit + ' giây',
         isMandatory: false
       }
     ],
 
     storyModal: {
-      text: `Scout the map. Hya!`,
-      hint: 'When you start the game random diamands will appear on the map.'
+      text: `Do thám bản đồ. Hya!`,
+      hint: 'Khi bạn bắt đầu trò chơi, những viên kim cương ngẫu nhiên sẽ xuất hiện trên bản đồ.'
     },
 
     winModal: {
-      text: 'Some wise words.'
+      text: 'Một số từ khôn ngoan.'
     },
 
     onFinish: ({gameState, workspace}) => {

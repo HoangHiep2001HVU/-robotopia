@@ -58,12 +58,12 @@ module.exports = () => {
     ],
 
     storyModal: {
-      text: `You are doing great so far! Can you also solve the next puzzle?`,
+      text: `Bạn đang làm rất tốt cho đến nay! Bạn cũng có thể giải câu đố tiếp theo không?`,
       hint: ''
     },
 
     winModal: {
-      text: `Great job!`
+      text: `Bạn đã làm rất tốt!`
     }
   }
 }

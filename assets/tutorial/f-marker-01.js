@@ -128,20 +128,20 @@ module.exports = () => {
       {
         type: 'moveTo',
         params: {position: {x: 12, y: 12}, entity: 'LOST_ROBOT03'},
-        desc: 'Lost robot returned to home after 10 years',
+        desc: 'Robot thất lạc trở về nhà sau 10 năm',
         isMandatory: true
       }
     ],
 
     storyModal: {
-      text: `Unfortunately three of the robots got lost. Luckily they will automatically move to a "red marker" as soon as one is placed.`,
-      hint: 'Robots can place markers of a given color.'
+      text: `Thật không may, ba trong số các robot đã bị lạc. May mắn thay, chúng sẽ tự động di chuyển đến "điểm đánh dấu màu đỏ" ngay khi được đặt.`,
+      hint: 'Robot có thể đặt các điểm đánh dấu của một màu nhất định.'
     },
 
     winModal: {
-      text: 'Thank you for getting my robots back to safety.',
+      text: 'Cảm ơn bạn đã đưa robot của tôi trở lại an toàn.',
       unlockedBlock: {
-        name: 'Resource Discovered Event',
+        name: 'Sự kiện khám phá tài nguyên',
         img: '../../assets/img/tutorials/blocks/resource-dicovered.png'
       }
     }
