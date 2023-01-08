@@ -2,7 +2,8 @@ const tutorials = []
 
 addTutorialRow('Blockly','Khối', [
   require('./a-blockly-01'),
-  require('./a-blockly-02')
+  require('./a-blockly-02'),
+  require('./a-blockly-03')
 ])
 /*
 addTutorialRow('Rotate','Rẽ', [
