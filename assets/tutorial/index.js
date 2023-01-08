@@ -4,7 +4,7 @@ addTutorialRow('Blockly','Khối', [
   require('./a-blockly-01'),
   require('./a-blockly-02')
 ])
-
+/*
 addTutorialRow('Rotate','Rẽ', [
   require('./b-rotate-01'),
   require('./b-rotate-02')
@@ -35,7 +35,7 @@ addTutorialRow('Marker','Đánh dấu', [
 addTutorialRow('Scout','Trinh sát', [
   require('./g-scout-01.js')
 ])
-
+*/
 function addTutorialRow (categoryName,categoryNameV, levels) {
   let row = {
     categoryName: categoryName,

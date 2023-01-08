@@ -54,7 +54,7 @@ const winningCondition = (gameState, { level, isStoryModalOpen }, workspace, sen
       const winModal = level.winModal
 
       const repeatLevelButtonHtml = buttonView({
-        label: 'Restart Level',
+        label: 'Chơi lại',
         onClick: () => {
           send('game:loadGameState', { loadState: level.game })
         }
@@ -132,7 +132,7 @@ const winningCondition = (gameState, { level, isStoryModalOpen }, workspace, sen
 
 function getNextLevelButton (send, level) {
   return buttonView({
-    label: 'Next',
+    label: 'Tiếp theo',
     onClick: () => send('tutorial:nextLevel', (nextLocation) => {
       send('location:set', nextLocation)
     })

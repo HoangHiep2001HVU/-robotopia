@@ -125,17 +125,11 @@ const overviewView = (state, prev, send) => {
   return html`
     <div class="${prefix}">
       <div class="logo"></div>
-      ${githubButtons()}
       <div class="tutorials">
-        <h2>Tutorials</h2>
+        <h2>Những hướng dẫn cơ bản</h2>
         ${getAllTutorials(tutorials)}
-      </div>
-      <div class="editor">
-        <h2>Competitive Mode</h2>
-        ${editorButton}
-        ${presenterButton}
-      </div>      
-      <div class="credits"><a href="#credits">© Credits</a></div>
+      </div>  
+      <div class="credits"><a href="https://github.com/HoangHiep2001HVU">© Hoàng Hiệp</a></div>
     </div>
   `
 }
