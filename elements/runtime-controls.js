@@ -25,7 +25,7 @@ function speedSliderView ({
 
   return html`
     <label class="${speedSliderPrefix}">
-      <span class="label">Speed</span>
+      <span class="label">Tốc độ</span>
       <input
         type="range"
         min="0" max="1"
