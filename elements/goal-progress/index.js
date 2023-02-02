@@ -19,6 +19,18 @@ const goalPrefix = sf`
     font-size: 1.2em;
     margin: 0;
   }
+
+  @media screen and (max-width: 820px) {
+    :host {
+      margin: 0;
+      padding: 0px 25px;
+    }
+    :host .request {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 `
 
 const goalListPrefix = sf`
@@ -55,11 +67,14 @@ function goalProgressView ({ display, game, goals, workspace }) {
 
     return html`
     <div class="${goalPrefix}">
-        <h2>Yêu cầu: </h2>
-        ${goalListView({ goals: mandatoryGoals, game, workspace })}
-      
-        <h2 style="${optionalGoals.length === 0 ? 'display: none' : ''}">Bonus: </h2>
-        ${goalListView({ goals: optionalGoals, game, workspace })}
+        <div class="request">
+          <h2>Yêu cầu: </h2>
+          ${goalListView({ goals: mandatoryGoals, game, workspace })}
+        </div>
+        <div class="request">
+          <h2 style="${optionalGoals.length === 0 ? 'display: none' : ''}">Thưởng: </h2>
+          ${goalListView({ goals: optionalGoals, game, workspace })}
+        </div>
     </div>
     `
   }

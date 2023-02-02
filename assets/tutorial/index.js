@@ -5,7 +5,7 @@ addTutorialRow('Blockly','Khối', [
   require('./a-blockly-02'),
   require('./a-blockly-03')
 ])
-/*
+
 addTutorialRow('Rotate','Rẽ', [
   require('./b-rotate-01'),
   require('./b-rotate-02')
@@ -22,7 +22,7 @@ addTutorialRow('Conditions','Điều kiện', [
   require('./d-conditions-01'),
   require('./d-conditions-02')
 ])
-
+/*
 addTutorialRow('Resources','Tài nguyên', [
   require('./e-resource-01.js'),
   require('./e-resource-02.js')

@@ -44,6 +44,26 @@ const prefix = sf`
     flex-shrink: 0;
     flex-grow: 0;
   }
+
+  @media screen and (max-width: 820px) {
+    :host {
+      display: block;
+    }
+    :host > .divider {
+      height: 1%;
+      width: 100%;
+      border: none;
+    }
+    :host > .panel{
+      height: 54%;
+    }
+    :host > .panel:first-child{
+      height: 12%;
+    }
+    :host > .panel:last-child{
+      height: 32%;
+    }
+  }
 `
 
 module.exports = component({

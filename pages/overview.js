@@ -109,6 +109,27 @@ const prefix = sf`
     font-weight: 600;
     line-height: 150%;
   }
+
+  @media screen and (max-width: 820px) {
+    :host > .logo {
+      height: 20%;
+    }
+    :host .level {
+      width: 44%;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    :host h2 {
+      font-size: 20px;
+    }
+    :host > .logo {
+      height: 15%;
+    }
+    :host .level {
+      width: 88%;
+    }
+  }
 `
 
 const overviewView = (state, prev, send) => {
@@ -158,7 +179,9 @@ function getAllTutorials (tutorials) {
     return html`
       <div class="category">
         <div class="name">${categoryNameV}</div>
-        ${_.map(category.levels, getTutorial)}
+        <div class="list_game">
+          ${_.map(category.levels, getTutorial)}
+        </div>
       </div>
 `
 

@@ -41,6 +41,16 @@ const prefix = sf`
     flex-direction: row;
     justify-content: center;
   }
+
+  @media screen and (max-width: 800px) {
+    :host {
+      min-width: 100%;
+    }
+
+    :host > .story-text {
+      margin: 0px;
+    }
+  }
 `
 
 const winningCondition = (gameState, { level, isStoryModalOpen }, workspace, send) => {

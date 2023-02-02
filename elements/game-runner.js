@@ -24,6 +24,9 @@ const gameRunnerPrefix = sf`
     position: relative;
     height: calc(100% - 50px);
   }
+
+  @media screen and (max-width: 820px) {
+  }
 `
 
 function gameRunnerView ({

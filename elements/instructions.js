@@ -27,6 +27,21 @@ const prefix = sf`
     background-position: 10px center;
     background-repeat: no-repeat;
   }
+  @media screen and (max-width: 820px) {
+    :host {
+      font-size: 14px;
+      padding: 5px;
+    }
+    :host h1{
+      margin: 5px;
+    }
+    :host p{
+      margin: 5px;
+    }
+    :host .story-hint {
+      display: none;
+    }
+  }
 `
 
 function instructionView ({ prev }, { level, isStoryModalOpen }) {
