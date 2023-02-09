@@ -25,7 +25,10 @@ const gameRunnerPrefix = sf`
     height: calc(100% - 50px);
   }
 
-  @media screen and (max-width: 820px) {
+  @media screen and (max-width: 420px) {
+    :host > .controls {
+      height: 35px;
+    }
   }
 `
 

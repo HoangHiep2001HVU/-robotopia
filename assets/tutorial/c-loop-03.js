@@ -58,7 +58,7 @@ module.exports = () => {
       {
         type: 'maxBlocks',
         params: {amount: 4},
-        desc: 'Use a maximum of four blocks',
+        desc: 'Sử dụng tối đa bốn khối',
         isMandatory: false
       },
       {
@@ -75,8 +75,7 @@ module.exports = () => {
     },
 
     winModal: {
-      text: `Tiếp theo là gì? - Chế độ vòng lặp khó hơn!`,
-      unlockedBlock: { name: 'If-Condition Block', img: '../../assets/img/tutorials/blocks/if-condition.png' }
+      text: `Tiếp theo là gì? - Chế độ vòng lặp khó hơn!`
     }
   }
 }

@@ -44,7 +44,7 @@ module.exports = () => {
     ],
 
     storyModal: {
-      text: ``,
+      text: `Sử dụng khối rẽ - rotate`,
       hint: 'Bạn đã nắm vững những điều cơ bản của giao diện, bây giờ cuộc hành trình của bạn tiếp tục với một số câu đố khó hơn.'
     },
 

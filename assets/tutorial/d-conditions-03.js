@@ -6,21 +6,20 @@ module.exports = () => {
   return {
     game: {
       tiles: [
-        [1, 1, 1, 1, 1, 1],
-        [1, 4, 4, 4, 4, 1],
-        getRandomTileRow(),
-        [1, 3, 3, 3, 3, 1],
-        getRandomTileRow(),
-        [1, 3, 3, 3, 3, 1],
-        getRandomTileRow(),
-        [1, 3, 3, 3, 3, 1],
-        getRandomTileRow(),
-        [1, 3, 3, 3, 3, 1],
-        [1, 1, 1, 1, 1, 1]
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 3, 2, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 3, 3, 3, 3, 2, 1],
+        [1, 1, 2, 1, 3, 1, 1, 3, 1, 1],
+        [1, 3, 3, 3, 3, 5, 1, 3, 1, 1],
+        [1, 1, 3, 1, 1, 1, 1, 3, 1, 1],
+        [1, 1, 3, 1, 5, 1, 1, 3, 4, 1],
+        [1, 2, 3, 3, 3, 3, 1, 5, 1, 1],
+        [1, 1, 1, 1, 3, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
       ],
 
       entities: [
-        entities.tutorialRobot({ x: 2, y: 9, id: 'ROBOT', orientation: ORIENTATION.BACK })
+        entities.tutorialRobot({ x: 4, y: 8, id: 'ROBOT', orientation: ORIENTATION.BACK })
       ]
     },
 
@@ -28,18 +27,13 @@ module.exports = () => {
       workspace: `<xml xmlns="http://www.w3.org/1999/xhtml">
 <block type="start_handler" x="50" y="50" deletable="false">
     <statement name="body">
-    <block type="controls_repeat">
-    <field name="TIMES">3</field>
-    <statement name="DO">
-    </statement>
-</block>
+    <block type="move" deletable="false"></block>
 </statement>
 </block>
 </xml>`,
 
       toolbox: `<xml id="toolbox" style="display: none">
                 <category name="Code Blocks" colour="${blockColors.EVENT_COLOR}">
-                    <block type="move"></block>
                     <block type="rotate"></block>
                     <block type="controls_repeat"></block>
                     <block type="controls_if"></block>
@@ -48,35 +42,25 @@ module.exports = () => {
               </xml>`
     },
 
-    label: 'Điều kiện - Chế độ khó',
+    label: 'Điều kiện - Theo dõi dấu hiệu',
 
     goals: [
       {
         type: 'touchTile',
         params: { tileID: 4 },
-        desc: 'Di chuyển robot đến bất kỳ ô kim loại nào',
+        desc: 'Di chuyển đến gạch kim loại',
         isMandatory: true
       }
     ],
 
     storyModal: {
-      text: `Đây là thử thách thành thạo! Nếu giải được câu đố này, bạn đã chuẩn bị tốt cho những thử thách sắp tới.`,
-      hint: 'Nếu bạn muốn bỏ qua cấp độ này, bạn chỉ cần nhấp vào logo ở góc trên bên trái để quay lại phần tổng quan'
+      text: `Bây giờ bạn đã biết sức mạnh của khối điều kiện... Lần này, bạn phải giải quyết cấp độ bằng một khối di chuyển duy nhất`,
+      hint: 'Cố gắng xem mô hình, các khối đưa ra chỉ dẫn về nơi cần đi.'
     },
 
     winModal: {
-      text: `Đáng kinh ngạc! Bạn thực sự đang trên đường chạy trốn.`
+      text: `Hãy lấy một số tài nguyên`,
+      unlockedBlock: { name: 'Collect Block', img: '../../assets/img/tutorials/blocks/collect-resource.png' }
     }
   }
-}
-
-function getRandomTileRow () {
-  const cases = [
-    [1, 3, 3, 3, 1, 1],
-    [1, 3, 3, 1, 3, 1],
-    [1, 3, 1, 3, 3, 1],
-    [1, 1, 3, 3, 3, 1]
-  ]
-
-  return cases[Math.floor(Math.random() * cases.length)]
 }

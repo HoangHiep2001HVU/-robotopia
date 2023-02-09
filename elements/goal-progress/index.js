@@ -59,6 +59,20 @@ const goalListPrefix = sf`
     background-size: 25px;
     background-image: url('assets/icons/checkbox-filled.svg');
   }
+
+  @media screen and (max-width: 820px) {
+    :host .goal span{
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    :host {
+      margin: 0;
+    }
+    :host h2{
+      margin: 0;
+    }
+  }
 `
 
 function goalProgressView ({ display, game, goals, workspace }) {
@@ -70,10 +84,6 @@ function goalProgressView ({ display, game, goals, workspace }) {
         <div class="request">
           <h2>Yêu cầu: </h2>
           ${goalListView({ goals: mandatoryGoals, game, workspace })}
-        </div>
-        <div class="request">
-          <h2 style="${optionalGoals.length === 0 ? 'display: none' : ''}">Thưởng: </h2>
-          ${goalListView({ goals: optionalGoals, game, workspace })}
         </div>
     </div>
     `

@@ -6,25 +6,20 @@ module.exports = () => {
   return {
     game: {
       tiles: [
-        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-        [1, 3, 3, 3, 3, 3, 1, 3, 3, 3, 1, 3, 3, 3, 1],
-        [1, 3, 1, 1, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1],
-        [1, 3, 3, 3, 1, 3, 3, 3, 1, 3, 3, 3, 1, 3, 1],
-        [1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1],
-        [1, 3, 3, 3, 1, 1, 1, 1, 1, 1, 1, 3, 3, 3, 1],
-        [1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1],
-        [1, 3, 3, 3, 1, 1, 1, 1, 1, 1, 1, 3, 3, 3, 1],
-        [1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1],
-        [1, 3, 3, 3, 1, 1, 1, 1, 1, 1, 1, 3, 3, 3, 1],
-        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1],
-        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 3, 3, 1],
-        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1],
-        [1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 3, 3, 3, 3, 1],
-        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+        [1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 3, 3, 3, 3, 3, 3, 3, 1],
+        [1, 3, 1, 1, 1, 1, 1, 3, 1],
+        [1, 3, 1, 1, 1, 1, 1, 3, 1],
+        [1, 3, 1, 3, 3, 3, 3, 3, 1],
+        [1, 3, 1, 3, 1, 1, 1, 1, 1],
+        [1, 3, 1, 3, 1, 1, 1, 1, 1],
+        [1, 3, 1, 3, 3, 3, 3, 4, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1]
       ],
 
       entities: [
-        entities.tutorialRobot({ x: 1, y: 9, id: 'ROBOT', orientation: ORIENTATION.BACK })
+        entities.tutorialRobot({ x: 1, y: 7, id: 'ROBOT', orientation: ORIENTATION.BACK }),
+        entities.chest({ x: 7, y: 7, orientation: 'BACK'})
       ]
     },
 
@@ -51,30 +46,36 @@ module.exports = () => {
               </xml>`
     },
 
-    label: 'Vòng lặp - Chế độ khó',
+    label: 'Vòng lặp - Xếp lồng vào nhau',
 
     goals: [
       {
         type: 'moveTo',
-        params: {position: {x: 9, y: 13}, entity: 'ROBOT'},
+        params: {position: {x: 7, y: 7}, entity: 'ROBOT'},
         desc: 'Di chuyển robot đến gạch kim loại',
         isMandatory: true
       },
       {
         type: 'maxBlocks',
-        params: {amount: 17},
-        desc: 'Sử dụng tối đa 17 khối',
+        params: {amount: 4},
+        desc: 'Sử dụng tối đa bốn khối',
+        isMandatory: false
+      },
+      {
+        type: 'useBlockWithinBlock',
+        params: { outerBlock: 'controls_repeat', innerBlock: 'controls_repeat' },
+        desc: 'Lồng một khối lặp lại bên trong một khối lặp lại khác',
         isMandatory: false
       }
     ],
 
     storyModal: {
-      text: `Bạn đang làm rất tốt!`,
-      hint: 'Cố gắng tìm kiếm các mô hình. Nếu bạn tìm thấy nó, mọi thứ sẽ dễ dàng hơn nhiều... (Nếu quá khó, bạn luôn có thể nhấp vào biểu tượng ở góc trên bên trái để quay lại tổng quan.)'
+      text: `Làm tốt! Bây giờ đây là một khó khăn.`,
+      hint: 'Bạn có thể sử dụng vòng lặp bên trong vòng lặp.'
     },
 
     winModal: {
-      text: `Bạn là Loop-King!`
+      text: `Tiếp theo là gì? - Chế độ vòng lặp khó hơn!`
     }
   }
 }

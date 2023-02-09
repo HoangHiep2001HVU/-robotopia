@@ -8,19 +8,22 @@ addTutorialRow('Blockly','Khối', [
 
 addTutorialRow('Rotate','Rẽ', [
   require('./b-rotate-01'),
-  require('./b-rotate-02')
+  require('./b-rotate-02'),
+  require('./b-rotate-03')
 ])
 
 addTutorialRow('Loops','Vòng lặp', [
   require('./c-loop-01'),
   require('./c-loop-02'),
   require('./c-loop-03'),
-  require('./c-loop-04')
+  require('./c-loop-04'),
+  require('./c-loop-05')
 ])
 
 addTutorialRow('Conditions','Điều kiện', [
   require('./d-conditions-01'),
-  require('./d-conditions-02')
+  require('./d-conditions-02'),
+  require('./d-conditions-03')
 ])
 /*
 addTutorialRow('Resources','Tài nguyên', [

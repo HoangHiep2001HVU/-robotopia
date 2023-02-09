@@ -36,10 +36,16 @@ const prefix = sf`
       margin: 5px;
     }
     :host p{
-      margin: 5px;
+      margin: 0;
     }
     :host .story-hint {
       display: none;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    :host {
+      font-size: 8px;
     }
   }
 `

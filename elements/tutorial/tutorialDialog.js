@@ -47,8 +47,13 @@ const prefix = sf`
       min-width: 100%;
     }
 
+    :host > h1 {
+      font-size: 18px;
+    }
+
     :host > .story-text {
       margin: 0px;
+      height: auto;
     }
   }
 `

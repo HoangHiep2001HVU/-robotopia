@@ -7,16 +7,15 @@ module.exports = () => {
     game: {
       tiles: [
         [1, 1, 1, 1, 1, 1],
-        [1, 1, 1, 3, 4, 1],
-        [1, 1, 3, 3, 2, 1],
-        [1, 3, 3, 2, 1, 1],
-        [1, 3, 2, 1, 1, 1],
+        [1, 3, 3, 3, 3, 1],
+        [1, 3, 1, 1, 3, 1],
+        [1, 3, 1, 1, 3, 1],
+        [1, 3, 4, 3, 3, 1],
         [1, 1, 1, 1, 1, 1]
       ],
 
       entities: [
-        entities.tutorialRobot({ x: 1, y: 4, id: 'ROBOT', orientation: ORIENTATION.BACK }),
-        entities.chest({ x: 4, y: 1, orientation: 'FRONT' })
+        entities.tutorialRobot({ x: 1, y: 4, id: 'ROBOT', orientation: ORIENTATION.BACK })
       ]
     },
 
@@ -34,31 +33,24 @@ module.exports = () => {
               </xml>`
     },
 
-    label: 'Rẽ - ZigZag',
+    label: 'Rẽ theo hình vuông',
 
     goals: [
       {
         type: 'moveTo',
-        params: {position: {x: 4, y: 1}, entity: 'ROBOT'},
+        params: {position: {x: 2, y: 4}, entity: 'ROBOT'},
         desc: 'Di chuyển robot đến gạch kim loại',
         isMandatory: true
-      },
-      {
-        type: 'dontTouchTileType',
-        params: {tileID: 2, entity: 'ROBOT'},
-        desc: 'Do not get your robot dirty',
-        isMandatory: false
       }
     ],
 
     storyModal: {
-      text: `Được rồi, tôi thấy bạn đã tìm ra cách rẽ trái. Nhưng bạn cũng có thể rẽ phải.`,
-      hint: ''
+      text: `Sử dụng khối rẽ - rotate`,
+      hint: 'Bạn đã nắm vững những điều cơ bản của giao diện, bây giờ cuộc hành trình của bạn tiếp tục với một số câu đố khó hơn.'
     },
 
     winModal: {
-      text: `Mọi thứ bên trong khối này sẽ được lặp lại nhiều lần như được xác định bởi số`,
-      unlockedBlock: { name: 'Repeat', img: '../../assets/img/tutorials/blocks/repeat-10-block.png' }
+      text: `Làm tốt lắm, làm cho rô-bốt quay!`
     }
 
   }
