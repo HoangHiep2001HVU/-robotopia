@@ -42,7 +42,7 @@ module.exports = () => {
               </xml>`
     },
 
-    label: 'Điều kiện - Theo dõi dấu hiệu',
+    label: 'Điều kiện - Tránh vật cản',
 
     goals: [
       {
