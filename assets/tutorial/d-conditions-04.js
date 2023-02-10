@@ -48,7 +48,7 @@ module.exports = () => {
               </xml>`
     },
 
-    label: 'Điều kiện - Chế độ khó',
+    label: 'Điều kiện - Tự do',
 
     goals: [
       {
